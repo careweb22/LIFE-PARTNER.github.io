@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;500;600&display=swap");
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #23262d;
+  --secondary: #fd6500;
+  --text: #fafafa;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--primary);
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h1,
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  border: none;
+  outline: none;
+}
+
+.btn-theme {
+  width: 150px;
+  padding: 0.9rem;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  border-radius: 50px;
+  border: 1px solid var(--secondary);
+  background: none;
+  color: var(--secondary);
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-theme:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  width: 180px;
+}
+
+.section-p {
+  padding: 80px 0;
+}
+
+.dflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=================================================================== header start =================================================================== */
+header {
+  padding: 12px 70px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--primary);
+}
+
+header .logo {
+  width: 200px;
+}
+
+header .navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar-list .navbar-link {
+  font-size: 17px;
+  color: var(--text);
+  font-weight: 600;
+  margin-left: 60px;
+}
+
+header .navbar-mobile {
+  display: none;
+}
+
+header .navbar-mobile i {
+  color: var(--text);
+}
+
+.navbar-mobile img {
+  width: 30px;
+}
+
+header .sidenav {
+  height: 100%;
+  width: 0;
+  border-radius: 0 5px 5px 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+header .sidenav a {
+  text-align: center;
+  font-size: 40px;
+  line-height: 100px;
+  color: var(--text);
+  display: block;
+  transition: 0.3s;
+}
+
+header .sidenav a:hover {
+  color: var(--dark);
+  font-size: 25px;
+}
+
+header .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*=================================================================== header end =================================================================== */
+
+/*=================================================================== hero start =================================================================== */
+.hero {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.hero-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-left h2 {
+  color: var(--secondary);
+}
+/*=================================================================== hero end =================================================================== */
+
+/*================================================================= why-us start ================================================================= */
+.card {
+  background-color: #3d424e;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.card i {
+  font-size: 50px;
+  color: var(--secondary);
+}
+/*================================================================== why-us end ================================================================== */
+
+/*================================================================== our-achievement end ================================================================== */
+.text-cord {
+  width: 100%;
+  background-color: #f29e1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 12px;
+  margin: 13px 0;
+}
+
+.text-cord-2 {
+  background-color: #fb3662;
+}
+
+.text-cord-3 {
+  background-color: #17b9ac;
+}
+
+.text-cord-4 {
+  background-color: #2d353f;
+}
+
+/*================================================================== our-achievement end ================================================================== */
+/*================================================================== feedback start ================================================================== */
+.feedback img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.feedback h3 {
+  color: var(--secondary);
+}
+
+.img-text {
+  display: flex;
+}
+
+.img-text .data {
+  padding-left: 20px;
+}
+/*================================================================== feedback end ================================================================== */
+
+/*================================================================== contact start ================================================================== */
+form {
+  background-color: #2d353f;
+  padding: 40px;
+  margin: 10px 0 0;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  color: var(--primary);
+  background-color: var(--primary) !important;
+  outline: none;
+  border: none !important;
+  height: 50px;
+}
+
+textarea {
+  height: 100px;
+}
+/*================================================================== contact end ================================================================== */
+
+/*================================================================== footer start ================================================================== */
+.footer {
+  background-color: #2d353f;
+}
+
+footer h4 {
+  margin-bottom: 30px;
+}
+
+footer i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.footer-about,
+.footer-contact,
+.footer-search {
+  padding: 15px;
+}
+/*================================================================== footer end ================================================================== */
